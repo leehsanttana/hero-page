@@ -1,0 +1,58 @@
+.badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  padding: 10px 14px;
+  border-radius: var(--r-md);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid transparent;
+  animation: floatBadge 4s ease-in-out infinite;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.green {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.25);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.12);
+}
+
+.purple {
+  background: rgba(124, 58, 237, 0.12);
+  border-color: rgba(124, 58, 237, 0.28);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
+  animation-delay: 1.2s;
+}
+
+.blue {
+  background: rgba(6, 182, 212, 0.12);
+  border-color: rgba(6, 182, 212, 0.28);
+  box-shadow: 0 8px 32px rgba(6, 182, 212, 0.12);
+  animation-delay: 2.4s;
+}
+
+.icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.title {
+  font-family: var(--ff-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--txt-primary);
+  line-height: 1.1;
+}
+
+.sub {
+  font-size: 0.72rem;
+  color: var(--txt-secondary);
+  margin-top: 2px;
+}
+
+@keyframes floatBadge {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}

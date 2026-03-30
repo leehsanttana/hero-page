@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  padding: 14px var(--sp-md);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--r-md);
+  backdrop-filter: blur(12px);
+  transition: border-color var(--tr-normal), background var(--tr-normal);
+}
+
+.card:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(124,58,237,0.3);
+}
+
+.icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.value {
+  font-family: var(--ff-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--txt-primary);
+  line-height: 1.2;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: var(--txt-secondary);
+  margin-top: 1px;
+}

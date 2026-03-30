@@ -1,0 +1,97 @@
+/* ===========================
+   GLOBAL RESET & DESIGN TOKENS
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Brand Colors */
+  --clr-primary:       #7C3AED;
+  --clr-primary-light: #A78BFA;
+  --clr-primary-dark:  #5B21B6;
+  --clr-accent:        #06B6D4;
+  --clr-accent-green:  #10B981;
+  --clr-accent-red:    #F43F5E;
+
+  /* Background Layers */
+  --bg-base:    #080B12;
+  --bg-surface: #0F1422;
+  --bg-card:    #141929;
+  --bg-border:  rgba(255,255,255,0.07);
+
+  /* Text */
+  --txt-primary:   #F1F5F9;
+  --txt-secondary: #8B98B8;
+  --txt-muted:     #4A5568;
+
+  /* Gradients */
+  --grad-hero: linear-gradient(135deg, #0a0d1a 0%, #0e1230 50%, #0d1520 100%);
+  --grad-brand: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%);
+  --grad-card:  linear-gradient(135deg, #1a1f35 0%, #141929 100%);
+
+  /* Glow */
+  --glow-primary: 0 0 60px rgba(124, 58, 237, 0.35);
+  --glow-accent:  0 0 40px rgba(6, 182, 212, 0.25);
+
+  /* Spacing */
+  --sp-xs:  4px;
+  --sp-sm:  8px;
+  --sp-md:  16px;
+  --sp-lg:  24px;
+  --sp-xl:  32px;
+  --sp-2xl: 48px;
+  --sp-3xl: 64px;
+  --sp-4xl: 96px;
+
+  /* Radius */
+  --r-sm:   8px;
+  --r-md:   12px;
+  --r-lg:   20px;
+  --r-xl:   28px;
+  --r-full: 9999px;
+
+  /* Font */
+  --ff-base:    'Inter', sans-serif;
+  --ff-display: 'Plus Jakarta Sans', sans-serif;
+
+  /* Transition */
+  --tr-fast:   0.15s ease;
+  --tr-normal: 0.25s ease;
+  --tr-slow:   0.4s cubic-bezier(.23,1,.32,1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-base);
+  background-color: var(--bg-base);
+  color: var(--txt-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
