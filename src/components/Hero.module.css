@@ -230,8 +230,8 @@
 
 .phoneWrapper {
   position: relative;
-  width: 300px;
-  height: 580px;
+  width: 380px;
+  height: 380px;
 }
 
 /* Glow rings */
@@ -267,39 +267,32 @@
   z-index: 5;
   width: 100%;
   height: 100%;
-  border-radius: 40px;
+  border-radius: 24px;
   overflow: hidden;
-  border: 1.5px solid rgba(255,255,255,0.1);
-  box-shadow:
-    0 0 80px rgba(124,58,237,0.3),
-    0 0 160px rgba(124,58,237,0.1),
-    0 30px 60px rgba(0,0,0,0.6),
-    inset 0 1px 0 rgba(255,255,255,0.1);
-  background: linear-gradient(160deg, #0d1130 0%, #0a0e22 60%, #080b18 100%);
   animation: levitate 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 40px rgba(124,58,237,0.45)) drop-shadow(0 20px 40px rgba(0,0,0,0.6));
 }
 
 .mockupImg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top;
+  object-fit: contain;
 }
 
 /* Floating badges (positioned individually in Hero.tsx via className prop) */
 .badge1 {
-  top: 8%;
-  left: -38%;
+  top: 0%;
+  left: -50%;
 }
 
 .badge2 {
-  bottom: 22%;
-  left: -42%;
+  bottom: 5%;
+  left: -55%;
 }
 
 .badge3 {
-  top: 38%;
-  right: -46%;
+  top: 35%;
+  right: -52%;
 }
 
 /* ─────────────────────────────────
@@ -399,8 +392,8 @@
   .section { padding: 100px var(--sp-md) var(--sp-3xl); }
 
   .phoneWrapper {
-    width: 230px;
-    height: 440px;
+    width: 280px;
+    height: 280px;
   }
 
   .statsRow {
