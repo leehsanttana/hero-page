@@ -14,8 +14,8 @@ export function Navbar() {
                 stroke="url(#grad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <defs>
                 <linearGradient id="grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stopColor="#7C3AED"/>
-                  <stop offset="100%" stopColor="#06B6D4"/>
+                  <stop offset="0%" stopColor="#F97316"/>
+                  <stop offset="100%" stopColor="#FBBF24"/>
                 </linearGradient>
               </defs>
             </svg>
