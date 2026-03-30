@@ -69,9 +69,7 @@ export function Hero() {
           </p>
           <p className={styles.sub}>
             Além disso, brasileiros ganham um desconto de 50% na assinatura anual.
-          </p>
-          <p className={styles.sub}>
-            Venha fazer parte do time!
+            Venha faazer parte do time!!!!
           </p>
 
           {/* CTA Row */}
